@@ -2,12 +2,46 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <title>FlySouth Aerolíneas</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <div class="barra1"></div><br><br><br>
+      <div class="barra2"></div>
+        <img src="../img/avion.png" alt="">
+        <h1>FlySouth Aerolíneas</h1>
+    </header>
+    <main>
+
+      </div>
+      <!--informacion-->
+      <!-- <div class="info-cont" style="display:none"> -->
+        <div class="info">
+          <p> Bienvenid@ <br> Valide el número de su giftcard <br> y acceda a un mundo de beneficios!</p>
+          <img src="../img/giftcard.png" alt="">
+        </div>
+      <!-- </div> -->
+      <!--contenido card validation-->
+      <div class="box-content">
+        <p>Ingrese número de tarjeta</p>
+        <input type="text" id="ncard" name="ncard" placeholder="xxxxxxxxxxxx0000" pattern="^[0-9]+" maxlength="16" required><br><br>
+        <p>Ingrese código de seguridad</p>
+        <input  type="text" class="ncard" id="ncode" name="ncode"><br><br>
+        <button id="validbtn">Validar</button>
+        <button id="restartbtn">Reiniciar</button>      
+      </div>
+      <!--boton validar-->
+      <div class= "alert-box" style="display:none">
+        <div class="alert-val">
+          <p class="valid">Su gift card es válida</p>
+          <p class="no-valid">Lo sentimos, su gift card no es válida</p>
+        </div>
+      </div>
+    </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>
