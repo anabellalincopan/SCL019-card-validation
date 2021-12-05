@@ -7,7 +7,7 @@
 
 
 html{
-    font-size: 80%;
+    font-size: 85%;
     font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -18,27 +18,20 @@ body{
 }
 
 header h1{
-    font-size: 4em;
-    font-weight: bolder;
-    text-align: center;
-    width: 150px;
-    display:inline; 
-    /* margin-left: 350px;  */
-   
+    font-size: 3.2em;
+    display: inline;
+    margin-left: 450px;
+    font-style: italic;
+
 }
 
 header img{
     width: 70px; 
     float: left; 
-    margin-right: 15px; 
-    margin-left:350px;
+    margin-right: 15px;
+    margin-left:365px;
+    position: absolute;
 } 
-
-
-
-main{
-    padding-bottom: 25px;
-}
 
 .barra1{
     background-color:#01887A;
@@ -50,7 +43,7 @@ main{
 }
 
 .barra2{
-    background-color:#01887A;
+    background:#01887A;
     height: 50px;
     padding: 1px;
     position: fixed;
@@ -58,18 +51,14 @@ main{
     bottom: 0;
 
     z-index: 99;
-}
-/*información*/
+} 
 
+/*información*/
 
 .info {
     margin: auto;
-    /* width: 800px; */
     height: 200px;
     display: grid;
-    /* grid-template-columns: 400px 400px;
-    grid-template-rows: 1fr;
-    grid-gap: 50px;  */
 } 
 
 .info p {
@@ -78,10 +67,9 @@ main{
     color:black;
     text-align: center;
     display: flex; 
-    /* align-items: flex-start; */
     position: relative;
     margin-left:  80px;;
-    padding-top: 90px;
+    padding-top: 50px;
 
 }
 
@@ -95,14 +83,16 @@ main{
 }
 
  .box-content{
-    position: absolute; 
-    margin:auto;
-    width: 250px;
-    height: 60px;
-    border-radius: 3.5px;
-    text-align: center;
-    left: 40%;
-    top: 140px;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 782px;
+    top: 150px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
 
 } 
 
@@ -115,7 +105,7 @@ main{
     text-align: center;
     grid-gap: 10px; 
     justify-content:center;
-    margin-left: 600px;   
+    margin-left: 400px;   
     margin-right: 10px;
     padding-top:25px; 
     
@@ -127,7 +117,7 @@ main{
     height: 30px;
     border-radius: 5px;
     padding-left: 18px;
-    margin-left: 260px;
+    margin-left: 70px;
     margin-top: 20px;
     font-size: 1.5rem;
     justify-content: center;
@@ -137,14 +127,14 @@ main{
 input.ncard {
     width: 100px;
     position: relative;
-    margin-left: 340px;
+    margin-left: 150px;
     
 }
 
 .box-content button{
     width: 125px;
     height: 35px;
-    margin-top: 30px;
+    margin-top: 20px;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1.5em;
     font-weight: bold;
@@ -153,7 +143,9 @@ input.ncard {
     color:white;
     background-color: #01887A;
     cursor: pointer;
-    margin-left: 330px;
-    display:inline;
+    margin-left: 140px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-}
+} 
+
+
