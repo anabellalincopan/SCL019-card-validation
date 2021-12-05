@@ -22,7 +22,7 @@ header h1{
     display: inline;
     margin-left: 450px;
     font-style: italic;
-
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 header img{
@@ -86,7 +86,7 @@ header img{
     position: absolute;
     width: 400px;
     height: 400px;
-    left: 782px;
+    left: 830px;
     top: 150px;
     background: #FFFFFF;
     border: 1px solid #000000;
@@ -98,7 +98,7 @@ header img{
 
 
 .box-content p{
-    font-size: 2em;  
+    font-size: 1.8em;  
     display: grid;
     grid-template-columns: 400px 400px;
     grid-template-rows: 1fr; 
@@ -106,8 +106,7 @@ header img{
     grid-gap: 10px; 
     justify-content:center;
     margin-left: 400px;   
-    margin-right: 10px;
-    padding-top:25px; 
+    padding-top:30px; 
     
 }
 
@@ -133,11 +132,11 @@ input.ncard {
 }
 
 .box-content button{
-    width: 125px;
+    width: 120px;
     height: 35px;
     margin-top: 20px;
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: bold;
     border-radius: 20px;
     border:none;
@@ -148,5 +147,25 @@ input.ncard {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 } 
+.alert-box{
+    position: absolute;
+    width: 457px;
+    height: 110px;
+    left: 852px;
+    top: 753px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.alert-val{
+    font-size: 28px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
 
 
