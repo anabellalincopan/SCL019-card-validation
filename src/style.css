@@ -149,20 +149,22 @@ input.ncode {
 
 .alert-box{
     position: absolute;
-    width: 400px;
-    height: 110px;
-    left: 852px;
-    top: 753px;
-
+    width: 360px;
+    height: 70px;
+    left: 450px;
+    top: 330px;
     background: #FFFFFF;
     border: 1px solid #000000;
     box-sizing: border-box;
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 .alert-val{
-    font-size: 28px;
-    line-height: 38px;
+    font-size: 19px;
+    line-height: 30px;
+    padding-top: 20px;
+    padding-left: 35px;
+    padding-right: 20px;
     display: flex;
     align-items: center;
     text-align: center;
