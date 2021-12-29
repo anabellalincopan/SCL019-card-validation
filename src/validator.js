@@ -2,8 +2,6 @@ const validator = {
 
   //FÓRMULA DE LUHN
 
-
-
   isValid: function(numCard) {
     // pasar array a orden inverso
     let inverseNumber= numCard.toString().split('').reverse().map(Number);
@@ -44,13 +42,43 @@ const validator = {
       } else {
         return false;
       }
+  },
+
+  maskify: function(numCard) {
+    let sizeNumber= numCard.length;
+      if(sizeNumber > 4) {
+        let visibleNumber= numCard.slice(-4);
+        // console.log(visibleNumber)
+        let replace= '#';
+        let hidenNumber= replace.repeat(sizeNumber - 4);
+        // console.log(hidenNumber)
+        return hidenNumber + visibleNumber;
+      } else {
+        return numCard;
+      }
   }
 
 
+    //MASKIFY
+  //   maskify: function(numCard) {
+  //   let value= "";
+  //   for (let i= 0; i < numCard.length - 4; i++) {
+  //     value+= numCard[i].replace(/./g,"#");
+  //   }
+  //   value= value + numCard.substr(numCard.length - 4, numCard.length);
+  //   return value;
+  // }
 
-  // MASKIFY
-
-
+  // maskify: function(numCard) {
+  //   let value= numCard.toString();
+  //   let hideNumber= value.slice(0, -4);
+  //   let visibleNumber= value.slice(-4);
+  //   let newNumber= hideNumber.split('').map(function() {
+  //     return '#';
+  //   });
+  //   newNumber= newNumber.join('');
+  //   return newNumber.concat(visibleNumber);
+  // }
 
 
 }

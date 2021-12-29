@@ -22,5 +22,8 @@
     "jest": "^27.0.1",
     "opener": "^1.5.1",
     "serve": "^12.0.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-promise": "^6.0.0"
   }
 }
