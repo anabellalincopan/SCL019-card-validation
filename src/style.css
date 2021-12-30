@@ -120,10 +120,11 @@ header img{
 }
 
 input.ncode {
-    width: 100px;
+    width: 90px;
     position: relative;
-    margin-left: 150px;
+    margin-left: 153px;
     margin-top: 10px;
+    text-align: left;
 }
 
 .box-content button{
