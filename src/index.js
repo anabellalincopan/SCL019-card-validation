@@ -1,11 +1,5 @@
 import validator from './validator.js';
 
-// const numCode= document.getElementById('ncode');
-// const validButton= document.getElementById('validbtn');
-// const restartButton= document.getElementById('restartbtn');
-//llamar a función maskify
-
-
 function validateNumCard() {
     let numCard= document.getElementById('ncard').value;
     let alertBox= document.getElementsByClassName('alertBox');
@@ -34,6 +28,21 @@ function validateNumCard() {
 document.getElementById('validbtn').addEventListener('click', validateNumCard, false);
 
 // función para permitir solo números en input
+function event(evt) {
+    function keyNumbers(key) {
+        let code= key.keyCode || key.which;
+        if(code >= 48 && code <= 57) {
+            return true;
+        } else {
+            alert('Ingrese solo números');
+            return false;
+        }
+    }
+    if (keyNumbers(evt) === false) {
+    evt.preventDefault();
+    }
+}
+document.getElementById('ncard').addEventListener('keypress', event, false);
 
 // función para reiniciar
 function inputClean() {
@@ -47,3 +56,4 @@ function inputClean() {
     }
 }
 document.getElementById('restartbtn').addEventListener('click', inputClean, false);
+

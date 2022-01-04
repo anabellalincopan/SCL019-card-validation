@@ -69,17 +69,5 @@ const validator = {
   //   return value;
   // }
 
-  // maskify: function(numCard) {
-  //   let value= numCard.toString();
-  //   let hideNumber= value.slice(0, -4);
-  //   let visibleNumber= value.slice(-4);
-  //   let newNumber= hideNumber.split('').map(function() {
-  //     return '#';
-  //   });
-  //   newNumber= newNumber.join('');
-  //   return newNumber.concat(visibleNumber);
-  // }
-
-
 }
 export default validator;
