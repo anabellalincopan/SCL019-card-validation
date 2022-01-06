@@ -11,6 +11,7 @@
 FlySouth Giftcard es una página web de la aerolínea ficticia FlySouth creada para validar las tarjetas de regalo de los clientes mediante la implementación del Algoritmo de Luhn.
 
 ![imagen](https://github.com/anabellalincopan/SCL019-card-validation/blob/main/src/img/pagina1.png)
+
 ![imagen](https://github.com/anabellalincopan/SCL019-card-validation/blob/main/src/img/pagina2.png)
 
 ## 2. Investigación UX
